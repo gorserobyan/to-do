@@ -118,9 +118,9 @@ const ListTodo = () => {
                         key="action"
                         render={(_, item: TodoItem) => (
                             <Space size="middle">
-                                <AiOutlineCloseCircle onClick={() => dispatch(deleteToDo({ id: item.id }))} />
-                                <AiFillEdit onClick={() => onEditToggle(item)} />
-                                <AiOutlineCheck onClick={() => dispatch(completeTodo({ id: item.id }))} />
+                                <AiOutlineCloseCircle onClick={() => dispatch(deleteToDo({ id: item.id }))} className="cursor-pointer"  />
+                                <AiFillEdit onClick={() => onEditToggle(item)} className="cursor-pointer" />
+                                <AiOutlineCheck onClick={() => dispatch(completeTodo({ id: item.id }))} className="cursor-pointer" />
                             </Space>
                         )}
                     />

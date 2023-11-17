@@ -47,6 +47,10 @@ code {
   margin-top: 30px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 @media all and (max-width: 576px) {
   .todo-content {
     padding: 12px;
